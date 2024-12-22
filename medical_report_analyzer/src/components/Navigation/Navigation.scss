@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Navigation { /* Initial color before scroll */
+  width: 100%;
+  opacity: 1 !important; /* Full opacity */
+  position: fixed;
+  padding: 0.8rem 2rem;
+  background-color: lightgrey;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transitions */
+  z-index: 1000; /* Ensure it is on top of other content */
+
+  .name {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: default;
+  }
+
+  .links {
+    display: flex;
+    gap: 2rem;
+    
+    font-size: 18px;
+
+    a {
+      color: black; /* Black text for links */
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: lightgray; /* Light gray on hover */
+      }
+    }
+  }
+}
+
+/* Scrolled state for the navbar */
+.Navigation.scrolled {
+  background-color: lightblue; /* Solid color when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
