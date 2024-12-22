@@ -1,0 +1,20 @@
+.analysis {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.analysis h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+.analysis .info-section p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #555;
+}
+.analysis .info-section p strong {
+  color: #222;
+}/*# sourceMappingURL=Analysis.css.map */
